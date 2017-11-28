@@ -3,6 +3,7 @@
   require('includes/reg_post_types.php');
   require('includes/reg_taxonomies.php');
   require('includes/reg_page_menu.php');
+  require('includes/widget.php');
 
   add_image_size( 'desktop_grid', 300, 300, true );
   add_image_size( 'mobile_grid', 500, 500, true );
