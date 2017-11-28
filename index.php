@@ -1,5 +1,12 @@
-<?php
+<?php get_header(); ?>
 
-	echo ('Bitches loco');
 
-?>
+<main>
+
+	<?php echo ('Bitches loco'); ?>
+
+</main>
+
+
+
+<?php get_footer(); ?>
