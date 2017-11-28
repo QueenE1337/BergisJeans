@@ -11,7 +11,9 @@
 
 <header>
 
-	<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?> <!-- Printing out the header menu -->
 	<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name') ?></a></h1> <!-- "logo" with a link to the front page -->
 
+	<nav>
+		<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?> <!-- Printing out the header menu -->
+	</nav>
 </header>
