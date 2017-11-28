@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
-  <h1>This is the front page template</h1>
+  <main>
+    <h1>This is the front page template</h1>
+
+  </main>
 
 <?php get_footer(); ?>

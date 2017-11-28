@@ -3,17 +3,33 @@
 <head>
 	<meta charset="utf-8">
 	<title><?php bloginfo('name') ?></title>
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
-	<?php wp_head() ?>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href=<?php bloginfo('stylesheet_url') ?>>
+	<script src="https://use.fontawesome.com/8718023d1d.js"></script>
+	<?php wp_head(); ?>
 </head>
+
 <body>
 
 <header>
+	<button id="hamburgerButton" type="button" onclick="toggleHamburger()">
+		<span></span>
+		<span></span>
+		<span></span>
+	</button>
 
-	<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name') ?></a></h1> <!-- "logo" with a link to the front page -->
+	<a id="headerLogo" href="<?php echo home_url(); ?>"><img src="http://bergisjeans.dev/wp-content/uploads/2017/11/bergisLogo.png" alt="logo"></a> <!-- "logo" with a link to the front page -->
 
 	<nav>
 		<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?> <!-- Printing out the header menu -->
 	</nav>
 </header>
+
+
+<script type="text/javascript">
+	function toggleHamburger(){
+		console.log("test");
+		document.getElementById("hamburgerButton").classList.toggle("clicked");
+	}
+</script>

@@ -8,3 +8,159 @@ Description: A theme to be used at BergisJeans.se
 /*Colours to use:
  RED = #cd3718
  BLUE = #3c90e0 */
+
+ /*========================================================
+                       General presets
+ =========================================================*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,500i,700,800');
+
+*{
+  padding:0;
+  margin:0;
+}
+
+a,p,h1,h2,h3,h4,h5{
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color:#cd3718;
+  font-weight: 500;
+}
+
+a:hover{
+  color:#ad1708;
+}
+
+body{
+  background:#dedede;
+}
+
+main{
+  min-height: 320px;
+}
+
+main,footer{
+  padding:5px;
+}
+
+/*========================================================
+                          HEADER
+=========================================================*/
+
+header{
+  border-bottom: 1px solid #CCC;
+  padding:11px 5px;
+  margin-bottom: 44px;
+}
+
+header>a#headerLogo{
+  display: block;
+  width: 142px;
+}
+
+header>a#headerLogo>img{
+    display: block;
+    height:auto;
+    width: 100%;
+}
+
+nav{
+  margin-top: 22px;
+}
+
+nav>div>ul{
+  text-align: center;
+}
+
+nav>div>ul>li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 22px;
+}
+
+/*========================================================
+                          Hamburger
+=========================================================*/
+
+#hamburgerButton{
+  float:right;
+  display: block;
+  height:32px;
+  width: 40px;
+  cursor:pointer;
+  position: relative;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+#hamburgerButton>span{
+  height:3px;
+  width:100%;
+  display: block;
+  background: #000;
+  position: absolute;
+  transition: top 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#hamburgerButton>span:nth-child(1){
+  top:0;
+}
+
+#hamburgerButton>span:nth-child(2){
+  top:50%;
+}
+
+#hamburgerButton>span:nth-child(3){
+  top:100%;
+}
+
+/*Clicked*/
+#hamburgerButton.clicked>span:nth-child(1),#hamburgerButton.clicked>span:nth-child(2){
+  -ms-transform: rotate(135deg); /* IE 9 */
+  -webkit-transform: rotate(135deg); /* Safari */
+  transform: rotate(135deg);
+  top:50%;
+}
+
+#hamburgerButton.clicked>span:nth-child(3){
+  -ms-transform: rotate(-135deg); /* IE 9 */
+  -webkit-transform: rotate(-135deg); /* Safari */
+  transform: rotate(-135deg);
+  top: 50%;
+}
+
+
+/*========================================================
+                          Footer
+=========================================================*/
+
+
+
+/*========================================================
+                      Media queries
+=========================================================*/
+@media(min-width:540px){
+
+    header>a#headerLogo{
+      width: 200px;
+      margin:auto;
+    }
+
+
+    #hamburgerButton{
+      display: none;
+    }
+
+}
+
+@media(min-width:960px){
+  header,main,footer{
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+}
