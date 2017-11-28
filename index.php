@@ -3,7 +3,7 @@
 
 <main>
 
-	<?php echo ('Bitches loco'); ?>
+
 
 </main>
 
