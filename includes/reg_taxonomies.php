@@ -6,8 +6,17 @@ function create_project_taxonomies() {
     'hierarchical'               => false,
     'public'                     => true,
   );
-//'product_material', ' product_size', ' product_model', ' product_sex'
+
   register_taxonomy( 'product_material', array('products'), $args );
+
+  $args = array(
+    'label'                     => 'Sizes',
+    'hierarchical'               => false,
+    'public'                     => true,
+  );
+
+  register_taxonomy( 'product_size', array('products'), $args );
+
 
   $args = array(
     'label'                     => 'Model',
