@@ -19,7 +19,8 @@
 		<span></span>
 	</button>
 
-	<a id="headerLogo" href="<?php echo home_url(); ?>"><img src="http://bergisjeans.dev/wp-content/uploads/2017/11/bergisLogo.png" alt="logo"></a> <!-- "logo" with a link to the front page -->
+
+	<a id="headerLogo" href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/bergisLogo.png" alt="Logotype"/></a> <!-- "logo" with a link to the front page -->
 
 	<nav>
 		<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?> <!-- Printing out the header menu -->
