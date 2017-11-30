@@ -87,35 +87,30 @@ nav>div>ul>li{
 #hamburgerButton{
   float:right;
   display: block;
-  height:32px;
-  width: 40px;
+  height:18px;/*Alter this to make the hamburger button larger*/
+  width: 28px;/*--||--*/
   cursor:pointer;
   position: relative;
   background: none;
   outline: none;
   border: none;
+  margin:11px 11px 0 0;
 }
 
-#hamburgerButton>span{
-  height:3px;
+#hamburgerButton>span{/*General presets for each line*/
+  height:4px;/*Change the thickness of the hamburger lines*/
   width:100%;
   display: block;
   background: #000;
   position: absolute;
+  -ms-transition: top 0.2s ease-in-out, transform 0.2s ease-in-out; /* IE 9*/
+  -webkit-transition: top 0.2s ease-in-out, transform 0.2s ease-in-out; /* Safari*/
   transition: top 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
-#hamburgerButton>span:nth-child(1){
-  top:0;
-}
-
-#hamburgerButton>span:nth-child(2){
-  top:50%;
-}
-
-#hamburgerButton>span:nth-child(3){
-  top:100%;
-}
+#hamburgerButton>span:nth-child(1){top:0;}/*Position each line differently*/
+#hamburgerButton>span:nth-child(2){top:50%;}
+#hamburgerButton>span:nth-child(3){top:100%;}
 
 /*Clicked*/
 #hamburgerButton.clicked>span:nth-child(1),#hamburgerButton.clicked>span:nth-child(2){
