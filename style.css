@@ -7,7 +7,8 @@ Description: A theme to be used at BergisJeans.se
 
 /*Colours to use:
  RED = #cd3718
- BLUE = #3c90e0 */
+ BLUE = #3c90e0
+ BLUE BLACK = #121d2d */
 
  /*========================================================
                        General presets
@@ -34,7 +35,8 @@ a:hover{
 }
 
 body{
-  background:#dedede;
+  background: #fff;
+  //background:#dedede;
 }
 
 main{
@@ -132,6 +134,50 @@ nav>div>ul>li{
                           Footer
 =========================================================*/
 
+footer {
+  background-color: #121d2d;
+  max-width: 100%;
+  height: auto;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  padding: 30px 30px 50px 30px;
+  position: relative;
+}
+
+footer>#infoLeft, #infoCenter, #infoRight {
+  float: left;
+  width: 33%;
+  box-sizing: border-bottom;
+  font-size: 10px;
+}
+
+footer>#infoLeft, #infoCenter {
+  border-right: 2px solid rgba(255,255,255, 0.5);
+}
+
+footer>form {
+  overflow: hidden;
+}
+
+footer<form<input[type=text] {
+  float: left;
+  background: none;
+  border:none;
+  cursor: pointer;
+  outline: none;
+}
+
+footer>#copyText {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 2px;
+  font-size: 10px;
+  background-color: #cd3718;
+}
 
 
 /*========================================================
@@ -153,7 +199,7 @@ nav>div>ul>li{
 
 @media(min-width:960px){
   header,main,footer{
-    width:960px;
+    width:100%;
     margin-left:auto;
     margin-right:auto;
   }
