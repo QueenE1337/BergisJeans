@@ -10,6 +10,10 @@ Description: A theme to be used at BergisJeans.se
  BLUE = #3c90e0
  BLUE BLACK = #121d2d */
 
+ /* Login to MailChimp:
+ Username: BergisJeans17
+ Password: Bergis-17 */
+
  /*========================================================
                        General presets
  =========================================================*/
@@ -154,18 +158,6 @@ footer>#infoLeft, #infoCenter, #infoRight {
 
 footer>#infoLeft, #infoCenter {
   border-right: 2px solid rgba(255,255,255, 0.5);
-}
-
-footer>form {
-  overflow: hidden;
-}
-
-footer<form<input[type=text] {
-  float: left;
-  background: none;
-  border:none;
-  cursor: pointer;
-  outline: none;
 }
 
 footer>#copyText {
