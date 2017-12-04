@@ -278,22 +278,27 @@ footer>#copyText {
   font-size: 10px;
   background-color: #cd3718;
 }
+
 #icons{
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
 }
+
+.values {
+    text-align: center;
+}
+
 .values>p {
-  text-align: center;
+  font-size: 11px;
+  width: 100px;
 }
 
 .values>i {
-  font-size: 200px;
-  float: left;
+  font-size: 90px;
   margin-bottom: 22px;
 }
-
 
 /*========================================================
                       Media queries
@@ -317,6 +322,23 @@ footer>#copyText {
 
 
     nav>div>ul>li{font-size: 14px;}
+
+    #icons{
+      width: 80%;
+    }
+
+    .values>i {
+      font-size: 140px;
+    }
+
+    .values>p {
+      font-size: 17px;
+      width: 150px;
+    }
+
+    .values {
+      width: 150px;
+    }
 
 }
 
