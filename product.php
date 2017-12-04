@@ -1,5 +1,5 @@
 <?php
-/* Template Name:  Products
+/* Template Name:  Product
 * Description:    Template for products
 */
 
