@@ -41,7 +41,7 @@ a:hover{
 body{
   background:#FFF;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 main{
@@ -62,7 +62,7 @@ header{
   padding:11px 5px;
   margin-bottom: 44px;
   box-sizing: border-box;
-  text-align: left;
+  text-align: center;
 }
 
 header>a#headerLogo{
@@ -71,7 +71,7 @@ header>a#headerLogo{
 
 header>a#headerLogo>img{
     display: block;
-    height:44px;
+    height:32px;
     width: auto;
 }
 
@@ -113,15 +113,18 @@ div.content-column {
 @media(max-width:540px){/*Only have the slidable menu for small screens*/
   nav{
     position: absolute;
-    top:0;
+    top:58px;
     right:-100%;
     opacity: 0;
     z-index: 50;
-    width: 300px;
-    height:100vh;
-    background: #CCC;
-    border-left: solid 1px #AAA;
+    width: 100%;
+    max-width: 300px;
+    height:calc(100vh - 58px);
+    background: #FFF;
     transition: right 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    -webkit-box-shadow: inset 0px 5px 10px -4px rgba(0,0,0,0.33);
+    -moz-box-shadow: inset 0px 5px 10px -4px rgba(0,0,0,0.33);
+    box-shadow: inset 0px 5px 10px -4px rgba(0,0,0,0.33);
   }
 
   nav>div>ul{
@@ -143,6 +146,23 @@ div.content-column {
     right:0;
     opacity: 1;
   }
+
+  nav>div>ul::after{
+  	content:'';
+  	top:0;
+  	right:-200%;
+  	background: rgba(0,0,0,0.4);
+  	height:calc(100vh - 58px);
+  	width:200%;
+  	position: absolute;
+  }
+
+  nav.clicked>div>ul::after{
+  	right:100%;
+  }
+
+
+
 }
 
 /*========================================================
@@ -150,17 +170,18 @@ div.content-column {
 =========================================================*/
 
 #hamburgerButton{
-  float:right;
+  position: absolute;
+  top:0;
+  right:0;
   z-index: 100;
   display: block;
   height:18px;/*Alter this to make the hamburger button larger*/
   width: 28px;/*--||--*/
   cursor:pointer;
-  position: relative;
   background: none;
   outline: none;
   border: none;
-  margin:11px 11px 0 0;
+  margin:22px 16px 0 0;
 }
 
 #hamburgerButton>span{/*General presets for each line*/
@@ -260,8 +281,6 @@ footer>#copyText {
     /*=======================================================
                                 Header
     =======================================================*/
-    header{text-align: center;}
-
     #hamburgerButton{display: none;}
 
     nav{margin-top: 11px;}
