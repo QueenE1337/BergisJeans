@@ -30,7 +30,6 @@
 
 <script type="text/javascript">
 	function toggleHamburger(){
-		console.log("test");
 		document.querySelector("nav").classList.toggle("clicked");
 		document.getElementById("hamburgerButton").classList.toggle("clicked");
 	}
