@@ -30,7 +30,7 @@ a,p,h1,h2,h3,h4,h5{
 
 a{
   text-decoration: none;
-  color:#cd3718;
+  color:#000;
   font-weight: 500;
 }
 
@@ -39,8 +39,9 @@ a:hover{
 }
 
 body{
-  background:#dedede;
+  background:#FFF;
   position: relative;
+  overflow-x: hidden;
 }
 
 main{
@@ -49,6 +50,7 @@ main{
 
 main,footer{
   padding:5px;
+  box-sizing: border-box;
 }
 
 /*========================================================
@@ -56,20 +58,52 @@ main,footer{
 =========================================================*/
 
 header{
-  border-bottom: 1px solid #CCC;
+/*  border-bottom: 1px solid #CCC;*/
   padding:11px 5px;
   margin-bottom: 44px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 header>a#headerLogo{
-  display: block;
-  width: 142px;
+  display: inline-block;
 }
 
 header>a#headerLogo>img{
     display: block;
-    height:auto;
-    width: 100%;
+    height:32px;
+    width: auto;
+}
+
+nav>div>ul>li>a{
+   text-transform: uppercase;
+}
+
+nav>div>ul>li.current-menu-item>a{
+  font-weight: 700;
+}
+
+/*========================================================
+                        CONTENT
+=========================================================*/
+.column-container {
+  overflow: hidden;
+  margin: 50px 0px;
+  background-color: rgba(20, 98, 195, 0.41) ;
+  height: 300px;
+
+}
+.column-container > .thumbnailpic {
+  float: left;
+  margin-left: 20px;
+
+}
+
+div.content-column {
+  margin: 0px 20px 0px 0px;
+  float: right;
+  width: 50%;
+
 }
 
 /*========================================================
@@ -79,15 +113,18 @@ header>a#headerLogo>img{
 @media(max-width:540px){/*Only have the slidable menu for small screens*/
   nav{
     position: absolute;
-    top:0;
+    top:58px;
     right:-100%;
     opacity: 0;
     z-index: 50;
-    width: 300px;
-    height:100vh;
-    background: #CCC;
-    border-left: solid 1px #AAA;
+    width: 100%;
+    max-width: 300px;
+    height:calc(100vh - 58px);
+    background: #FFF;
     transition: right 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    -webkit-box-shadow: inset 0px 5px 10px -4px rgba(0,0,0,0.33);
+    -moz-box-shadow: inset 0px 5px 10px -4px rgba(0,0,0,0.33);
+    box-shadow: inset 0px 5px 10px -4px rgba(0,0,0,0.33);
   }
 
   nav>div>ul{
@@ -109,6 +146,23 @@ header>a#headerLogo>img{
     right:0;
     opacity: 1;
   }
+
+  nav>div>ul::after{
+  	content:'';
+  	top:0;
+  	right:-200%;
+  	background: rgba(0,0,0,0.4);
+  	height:calc(100vh - 58px);
+  	width:200%;
+  	position: absolute;
+  }
+
+  nav.clicked>div>ul::after{
+  	right:100%;
+  }
+
+
+
 }
 
 /*========================================================
@@ -116,17 +170,18 @@ header>a#headerLogo>img{
 =========================================================*/
 
 #hamburgerButton{
-  float:right;
+  position: absolute;
+  top:0;
+  right:0;
   z-index: 100;
   display: block;
   height:18px;/*Alter this to make the hamburger button larger*/
   width: 28px;/*--||--*/
   cursor:pointer;
-  position: relative;
   background: none;
   outline: none;
   border: none;
-  margin:11px 11px 0 0;
+  margin:22px 16px 0 0;
 }
 
 #hamburgerButton>span{/*General presets for each line*/
@@ -241,23 +296,11 @@ footer>#copyText {
     /*=======================================================
                                 Header
     =======================================================*/
-    header>a#headerLogo{
-      width: 200px;
-      margin:auto;
-    }
+    #hamburgerButton{display: none;}
 
+    nav{margin-top: 11px;}
 
-    #hamburgerButton{
-      display: none;
-    }
-
-    nav{
-      margin-top: 22px;
-    }
-
-    nav>div>ul{
-      text-align: center;
-    }
+    nav>div>ul{text-align: center;}
 
     nav>div>ul>li{
       display: inline-block;
@@ -265,6 +308,7 @@ footer>#copyText {
     }
 
 
+    nav>div>ul>li{font-size: 14px;}
 
 }
 
