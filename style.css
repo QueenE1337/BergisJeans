@@ -216,6 +216,21 @@ footer>#copyText {
   font-size: 10px;
   background-color: #cd3718;
 }
+#icons{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.values>p {
+  text-align: center;
+}
+
+.values>i {
+  font-size: 200px;
+  float: left;
+  margin-bottom: 22px;
+}
 
 
 /*========================================================
