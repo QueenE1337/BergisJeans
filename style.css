@@ -42,6 +42,7 @@ body{
   background:#FFF;
   position: relative;
   overflow-x: hidden;
+  margin-top: 88px;
 }
 
 main{
@@ -62,9 +63,13 @@ main,footer{
 header{
 /*  border-bottom: 1px solid #CCC;*/
   padding:11px 5px;
-  margin-bottom: 44px;
   box-sizing: border-box;
   text-align: center;
+  background: #FFF;
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 30;
 }
 
 header>a#headerLogo{
@@ -295,6 +300,7 @@ footer>#copyText {
 =========================================================*/
 @media(min-width:540px){
 
+    body{margin-top: 110px;}
     /*=======================================================
                                 Header
     =======================================================*/
