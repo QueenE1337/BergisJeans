@@ -208,20 +208,24 @@ ul.products-container{
 ul.products-container>li{
   overflow: hidden;
   list-style: none;
-  padding:11px;
+  padding:22px 11px;
   box-sizing: border-box;
+  position: relative;
 }
 
 ul.products-container>li::before{
   content: '';
-  width:100px;
-  height:0;
-  background: #000;
+  display: block;
+  width:80%;
+  height:1px;
+  background: rgba(0,0,0,0.1);
+  margin: 0 auto 44px auto;
 }
 
 ul.products-container>li>div>img{
   width: 100%;
   height: auto;
+  display: block;
 }
 
 /*========================================================
