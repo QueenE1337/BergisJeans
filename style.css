@@ -240,6 +240,42 @@ ul.products-container>li>div:last-child{
   width: 30%;
 }
 
+ul.products-container>li::before {
+  content:'';
+  height: 2px;
+  width: 600px;
+  background: #ccc;
+  display: block;
+  margin: 11px auto 33px auto;
+}
+
+#icons{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.values {
+    text-align: center;
+}
+
+.values>p {
+  font-size: 11px;
+  width: 100px;
+}
+
+.values>i {
+  font-size: 90px;
+  margin-bottom: 22px;
+  color: transparent;
+    background-color: #000;
+  text-shadow: 4px 4px 3px rgba(255,255,255,0.2);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
 /*========================================================
                           Footer
 =========================================================*/
@@ -297,32 +333,7 @@ footer>#copyText {
   background-color: #cd3718;
 }
 
-#icons{
-  display: flex;
-  justify-content: space-between;
-  width: 95%;
-  margin: 0 auto;
-}
 
-.values {
-    text-align: center;
-}
-
-.values>p {
-  font-size: 11px;
-  width: 100px;
-}
-
-.values>i {
-  font-size: 90px;
-  margin-bottom: 22px;
-  color: transparent;
-    background-color: #000;
-  text-shadow: 4px 4px 3px rgba(255,255,255,0.2);
-  -webkit-background-clip: text;
-     -moz-background-clip: text;
-          background-clip: text;
-}
 
 /*========================================================
                       Media queries
