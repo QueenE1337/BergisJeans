@@ -41,7 +41,7 @@ a:hover{
 body{
   background:#FFF;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 main{
