@@ -30,7 +30,7 @@ a,p,h1,h2,h3,h4,h5{
 
 a{
   text-decoration: none;
-  color:#cd3718;
+  color:#000;
   font-weight: 500;
 }
 
@@ -39,8 +39,9 @@ a:hover{
 }
 
 body{
-  background:#dedede;
+  background:#FFF;
   position: relative;
+  overflow-x: hidden;
 }
 
 main{
@@ -49,6 +50,7 @@ main{
 
 main,footer{
   padding:5px;
+  box-sizing: border-box;
 }
 
 /*========================================================
@@ -56,20 +58,29 @@ main,footer{
 =========================================================*/
 
 header{
-  border-bottom: 1px solid #CCC;
+/*  border-bottom: 1px solid #CCC;*/
   padding:11px 5px;
   margin-bottom: 44px;
+  box-sizing: border-box;
+  text-align: left;
 }
 
 header>a#headerLogo{
-  display: block;
-  width: 142px;
+  display: inline-block;
 }
 
 header>a#headerLogo>img{
     display: block;
-    height:auto;
-    width: 100%;
+    height:44px;
+    width: auto;
+}
+
+nav>div>ul>li>a{
+   text-transform: uppercase;
+}
+
+nav>div>ul>li.current-menu-item>a{
+  font-weight: 700;
 }
 
 /*========================================================
@@ -249,23 +260,13 @@ footer>#copyText {
     /*=======================================================
                                 Header
     =======================================================*/
-    header>a#headerLogo{
-      width: 200px;
-      margin:auto;
-    }
+    header{text-align: center;}
 
+    #hamburgerButton{display: none;}
 
-    #hamburgerButton{
-      display: none;
-    }
+    nav{margin-top: 11px;}
 
-    nav{
-      margin-top: 22px;
-    }
-
-    nav>div>ul{
-      text-align: center;
-    }
+    nav>div>ul{text-align: center;}
 
     nav>div>ul>li{
       display: inline-block;
@@ -273,6 +274,7 @@ footer>#copyText {
     }
 
 
+    nav>div>ul>li{font-size: 14px;}
 
 }
 
