@@ -1,6 +1,6 @@
 <?php
-/* Template Name:  Product
-* Description:    Template for products
+/* Template Name:  Products
+* Description:    Template for Products
 */
 
 get_header(); ?>
