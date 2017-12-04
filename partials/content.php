@@ -8,18 +8,18 @@ $args = array(
 <?php
 $mq=new WP_Query($args);
 if($mq->have_posts() ):
+   echo "<ul class='products-container'>";
    while ( $mq->have_posts() ) : $mq->the_post(); ?>
-<div class="column-container">
-  <div class="content-column">
-    <h1><?php the_title(); ?></h1>
-    <p><?php the_content(); ?></p>
-  </div>
-  <div class="thumbnailpic">
-    <?php the_post_thumbnail('desktop_grid'); ?>
-  </div>
-
-</div>
-
+    <li>
+      <div class="content-column">
+        <h1><?php the_title(); ?></h1>
+        <p><?php the_content(); ?></p>
+      </div>
+      <div class="thumbnailpic">
+        <?php the_post_thumbnail('desktop_grid'); ?>
+      </div>
+    </li>
 <?php endwhile;
+  echo "</ul>";
 endif;
 ?>

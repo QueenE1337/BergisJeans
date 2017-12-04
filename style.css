@@ -91,29 +91,6 @@ nav>div>ul>li.current-menu-item>a{
 }
 
 /*========================================================
-                        CONTENT
-=========================================================*/
-.column-container {
-  overflow: hidden;
-  margin: 50px 0px;
-  background-color: rgba(20, 98, 195, 0.41) ;
-  height: 300px;
-
-}
-.column-container > .thumbnailpic {
-  float: left;
-  margin-left: 20px;
-
-}
-
-div.content-column {
-  margin: 0px 20px 0px 0px;
-  float: right;
-  width: 50%;
-
-}
-
-/*========================================================
                       Hamburger-menu
 =========================================================*/
 
@@ -221,6 +198,47 @@ div.content-column {
   top: 50%;
 }
 
+/*========================================================
+                        CONTENT
+=========================================================*/
+ul.products-container{
+  margin:44px 0;
+}
+
+ul.products-container>li{
+  overflow: hidden;
+  list-style: none;
+  padding:11px;
+  box-sizing: border-box;
+}
+
+ul.products-container>li>div>img{
+  width: 100%;
+  height: auto;
+}
+
+ul.products-container>li>div{
+  float:right;
+  width: 70%;
+  display: block;
+}
+
+ul.products-container>li:nth-child(2n)>div{
+  float:left;
+}
+
+ul.products-container>li>div:first-child{
+  padding: 0 0 0 44px;
+  box-sizing: border-box;
+}
+
+ul.products-container>li:nth-child(2n)>div:first-child{
+  padding: 0 44px 0 0;
+}
+
+ul.products-container>li>div:last-child{
+  width: 30%;
+}
 
 /*========================================================
                           Footer
