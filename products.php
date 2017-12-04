@@ -11,7 +11,7 @@ get_header(); ?>
       <div class="values"><i class="fa fa-star" aria-hidden="true"></i><p><strong>Top Quality</strong></p></div>
       <div class="values"><i class="fa fa-arrows-h" aria-hidden="true"></i><p><strong>Well-Fitted</strong></p></div>
     </div>
-    <?php get_template_part('partials/content'); ?>
+    <?php get_template_part('partials/products-content'); ?>
 
 
   </main>

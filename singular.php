@@ -3,7 +3,7 @@
 
 <main>
 
-  <?php echo "singular.php"; ?>
+  <?php get_template_part('partials/content'); ?>
 
 </main>
 

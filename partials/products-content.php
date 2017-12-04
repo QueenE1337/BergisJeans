@@ -1,10 +1,15 @@
 <?php
-
-if(have_posts()){
-  echo "<ul class='products-container'>";
-  while(have_posts()){
-    the_post();
+$args = array(
+  'post_type' => 'products',
+  'posts_per_page' => -1
+);
 ?>
+
+<?php
+$mq=new WP_Query($args);
+if($mq->have_posts() ):
+   echo "<ul class='products-container'>";
+   while ( $mq->have_posts() ) : $mq->the_post(); ?>
     <li class="product-container">
       <div>
         <a href="<?php echo esc_url(get_permalink()); ?>">
@@ -18,8 +23,7 @@ if(have_posts()){
         <?php the_content(); ?>
       </div>
     </li>
-<?php
-  }
+<?php endwhile;
   echo "</ul>";
-}
+endif;
 ?>

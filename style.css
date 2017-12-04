@@ -35,7 +35,7 @@ a{
 }
 
 a:hover{
-  color:#ad1708;
+  color:rgba(0,0,0,0.6);
 }
 
 body{
@@ -46,7 +46,7 @@ body{
 }
 
 main{
-  min-height: 320px;
+  min-height: 380px;
   max-width: 960px;
   margin:auto;
 }
@@ -201,8 +201,29 @@ nav>div>ul>li.current-menu-item>a{
 /*========================================================
                         CONTENT
 =========================================================*/
-ul.products-container{
-  margin:44px 0;
+
+.product-container h4{
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  padding-bottom: 11px;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.product-container a>h4::after{
+  content:"";
+  display: block;
+  height:3px;
+  width:50px;
+  background: #000;
+  position: absolute;
+  bottom:0;
+}
+
+.product-container a:hover>h4::after{
+  background: rgba(0,0,0,0.6);
 }
 
 ul.products-container>li{
@@ -222,10 +243,20 @@ ul.products-container>li::before{
   margin: 0 auto 44px auto;
 }
 
-ul.products-container>li>div>img{
+ul.products-container>li:first-child::before{
+  display: none;
+}
+
+
+.product-container>div>a>img{
   width: 100%;
   height: auto;
   display: block;
+}
+
+
+.product-container>div:last-child{
+  margin-top: 11px;
 }
 
 /*========================================================
@@ -241,6 +272,7 @@ footer {
   overflow: hidden;
   padding: 30px 30px 50px 30px;
   position: relative;
+  margin-top: 44px;
 }
 
 footer>#infoLeft, #infoCenter, #infoRight {
@@ -289,7 +321,7 @@ footer>#copyText {
   display: flex;
   justify-content: space-between;
   width: 95%;
-  margin: 0 auto;
+  margin: 0 auto 44px 0;
 }
 
 .values {
@@ -356,7 +388,7 @@ footer>#copyText {
       width: 150px;
     }
 
-    ul.products-container>li>div{
+    .product-container>div{
       float:left;
       width: 50%;
       display: block;
@@ -366,7 +398,7 @@ footer>#copyText {
       float:right;
     }
 
-    ul.products-container>li>div:first-child{
+    .product-container>div:first-child{
       padding: 0 44px 0 0;
       box-sizing: border-box;
     }
@@ -375,6 +407,9 @@ footer>#copyText {
       padding: 0 0 0 44px;
     }
 
+    .product-container>div:last-child{
+      margin-top: 0;
+    }
 
 }
 
@@ -384,9 +419,5 @@ footer>#copyText {
     margin-left:auto;
     margin-right:auto;
   }
-
-  ul.products-container>li>div{width: 40%;}
-
-  ul.products-container>li>div:last-child{width: 60%;}
 
 }
