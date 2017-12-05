@@ -260,6 +260,16 @@ ul.products-container>li:first-child::before{
 }
 
 /*========================================================
+                          About
+=========================================================*/
+.history-section:first-child>div>p::first-letter{
+  font-size: 32px;
+  font-weight: 500;
+  display: block;
+  float:left;
+}
+
+/*========================================================
                           Footer
 =========================================================*/
 
@@ -324,22 +334,22 @@ footer>#copyText {
   margin: 0 auto 44px auto;
 }
 
-.values {
+.product-qualities {
     text-align: center;
     width: 33%;
 }
 
-.values>p {
+.product-qualities>p {
   font-size: 11px;
   width: 100%;
 }
 
-.values>i {
+.product-qualities>i {
   font-size: 90px;
   margin-bottom: 22px;
   color: transparent;
     background-color: #000;
-  text-shadow: 4px 4px 3px rgba(255,255,255,0.2);
+  text-shadow: 4px 4px 3px rgba(255,255,255,0.1);
   -webkit-background-clip: text;
      -moz-background-clip: text;
           background-clip: text;
@@ -375,16 +385,16 @@ footer>#copyText {
     /*=======================================================
                             Content
     =======================================================*/
-    .values>i {
+    .product-qualities>i {
       font-size: 140px;
     }
 
-    .values>p {
+    .product-qualities>p {
       font-size: 17px;
       width: 150px;
     }
 
-    .values {
+    .product-qualities {
       width: 150px;
     }
 

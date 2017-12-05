@@ -17,6 +17,23 @@
   );
   register_sidebar( $args );
 
+  /*About*/
+  $args = array(
+     'id'            => 'about-info',
+     /** Visible name in the Admin Dashboard Widget page */
+     'name'          => __( 'About text', 'post_theme' ),
+     /** Visible description in the Admin Dashboard Widget page */
+     'description'   => __( 'Who are Bergis?', 'post_theme' ),
+
+     /** HTML to wrap widget title in  */
+     'before_title'  => '<h2>',
+     'after_title'   => '</h2>',
+     /** HTML to wrap each widget  */
+     'before_widget' => '<section>',
+     'after_widget'  => '</section>',
+   );
+   register_sidebar( $args );
+
 
  $args = array(
     'id'            => 'vision-info',
@@ -26,10 +43,10 @@
     'description'   => __( 'Bergis Jeans vision.', 'post_theme' ),
 
     /** HTML to wrap widget title in  */
-    'before_title'  => '<h2 class="about-values">',
+    'before_title'  => '<h2>',
     'after_title'   => '</h2>',
     /** HTML to wrap each widget  */
-    'before_widget' => '<section>',
+    'before_widget' => '<section class="values">',
     'after_widget'  => '</section>',
   );
   register_sidebar( $args );
@@ -43,14 +60,29 @@
     'description'   => __( 'Bergis Jeans mission.', 'post_theme' ),
 
     /** HTML to wrap widget title in  */
-    'before_title'  => '<h2 class="about-values">',
+    'before_title'  => '<h2>',
     'after_title'   => '</h2>',
     /** HTML to wrap each widget  */
-    'before_widget' => '<section>',
+    'before_widget' => '<section class="values">',
     'after_widget'  => '</section>',
   );
   register_sidebar( $args );
 
+  $args = array(
+     'id'            => 'history-info',
+     /** Visible name in the Admin Dashboard Widget page */
+     'name'          => __( 'Company History', 'post_theme' ),
+     /** Visible description in the Admin Dashboard Widget page */
+     'description'   => __( 'History of Bergis Jeans.', 'post_theme' ),
+
+     /** HTML to wrap widget title in  */
+     'before_title'  => '<h2>',
+     'after_title'   => '</h2>',
+     /** HTML to wrap each widget  */
+     'before_widget' => '<section class="history-section">',
+     'after_widget'  => '</section>',
+   );
+   register_sidebar( $args );
 
  $args = array(
     'id'            => 'subscribe-form',
@@ -60,7 +92,7 @@
     'description'   => __( 'A subscribe form for the newsletter.', 'post_theme' ),
 
     /** HTML to wrap widget title in  */
-    'before_title'  => '<h2 class="about-values">',
+    'before_title'  => '<h2 class="about-values>',
     'after_title'   => '</h2>',
     /** HTML to wrap each widget  */
     'before_widget' => '<section>',
@@ -73,6 +105,3 @@
  add_action( 'widgets_init', 'add_widgets' );
 
 ?>
-
-
-
