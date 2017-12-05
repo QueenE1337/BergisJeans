@@ -278,6 +278,10 @@ ul.products-container>li:first-child::before{
                           About
 =========================================================*/
 
+main.about{
+  padding-top: 22px;
+}
+
 main.about p{
   margin-bottom: 22px;
 }
