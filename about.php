@@ -5,24 +5,28 @@
 
 get_header(); ?>
 
-  <main>
-    <h1><?php the_field( "description_title" ); ?></h1>
-    <p><?php the_field( "description" ); ?></p>
-    <?php the_post_thumbnail('mobile_grid'); ?>
+  <main class="about">
+    <div class="about-description-container">
+      <div class="content">
+        <h1 class="title underline"><?php the_field( "description_title" ); ?></h1>
+        <p class="drop-cap"><?php the_field( "description" ); ?></p>
+      </div>
+      <figure class="description_image"><?php the_post_thumbnail('mobile_grid'); ?></figure>
+    </div>
     <ul class="values">
       <li>
-        <h4>Vision</h4>
+        <h4 class="title">Vision</h4>
         <p><?php the_field( "vision" ); ?></p>
       </li>
       <li>
-        <h4>Mission</h4>
+        <h4 class="title">Mission</h4>
         <p><?php the_field( "mission" ); ?></p>
       </li>
     </ul>
 
     <div class="timeline">
-      <h4><?php the_field( "history_label" ); ?></h4>
-      <p><?php the_field( "history_description" ); ?></p>
+      <h4 class="title underline"><?php the_field( "history_label" ); ?></h4>
+      <p class="drop-cap"><?php the_field( "history_description" ); ?></p>
     </div>
   </main>
 

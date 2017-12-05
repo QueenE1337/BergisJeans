@@ -28,6 +28,11 @@ a,p,h1,h2,h3,h4,h5{
   font-family: 'Montserrat', sans-serif;
 }
 
+p{
+  font-size: 16px;
+  line-height: 20px;
+}
+
 a{
   text-decoration: none;
   color:#000;
@@ -54,6 +59,44 @@ main{
 main,footer{
   padding:5px;
   box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.drop-cap::first-letter{
+  font-size: 42px;
+  line-height: 38px;
+  font-weight: 500;
+  display: block;
+  float:left;
+  margin-right: 8px;
+}
+
+.title{
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.title.underline{
+  padding-bottom: 11px;
+}
+
+.underline::after{
+  content:"";
+  display: block;
+  height:3px;
+  width:50px;
+  background: #000;
+  position: absolute;
+  bottom:0;
 }
 
 /*========================================================
@@ -202,26 +245,6 @@ nav>div>ul>li.current-menu-item>a{
                         CONTENT
 =========================================================*/
 
-.product-container h4{
-  font-size: 32px;
-  text-transform: uppercase;
-  font-weight: 500;
-  display: inline-block;
-  padding-bottom: 11px;
-  margin-bottom: 22px;
-  position: relative;
-}
-
-.product-container a>h4::after{
-  content:"";
-  display: block;
-  height:3px;
-  width:50px;
-  background: #000;
-  position: absolute;
-  bottom:0;
-}
-
 .product-container a:hover>h4::after{
   background: rgba(0,0,0,0.6);
 }
@@ -244,16 +267,8 @@ ul.products-container>li::before{
 }
 
 ul.products-container>li:first-child::before{
-  display: none;
+  display: none;/*remove the line for the first list element*/
 }
-
-
-.product-container>div>a>img{
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 
 .product-container>div:last-child{
   margin-top: 11px;
@@ -263,6 +278,23 @@ ul.products-container>li:first-child::before{
                           About
 =========================================================*/
 
+main.about p{
+  margin-bottom: 22px;
+}
+
+.about-description-container{
+  margin-bottom: 44px;
+}
+
+ul.values{
+  list-style: none;
+  margin-bottom: 22px;
+}
+
+ul.values h4{
+  font-size: 22px;
+  margin-bottom: 11px;
+}
 
 /*========================================================
                           Footer
@@ -416,6 +448,39 @@ footer>#copyText {
       margin-top: 0;
     }
 
+    /*=======================================================
+                            About
+    =======================================================*/
+    .about-description-container{
+      overflow: hidden;
+    }
+    .about-description-container>div{
+      float:right;
+      width:50%;
+    }
+    .about-description-container>figure{
+      /*float:left;*/
+      width:50%;
+      padding:0 44px 0 0;
+      box-sizing: border-box;
+    }
+
+    ul.values{
+      overflow: hidden;
+      margin: 66px 0;
+    }
+
+    ul.values>li{
+      float:left;
+      width:50%;
+      text-align: center;
+    }
+
+    ul.values>li h4, ul.values>li p{
+      max-width: 300px;
+      margin: auto;
+    }
+
 }
 
 @media(min-width:960px){
@@ -423,6 +488,15 @@ footer>#copyText {
     width:100%;
     margin-left:auto;
     margin-right:auto;
+  }
+
+  .about-description-container>div{
+    float:right;
+    width:60%;
+  }
+  .about-description-container>figure{
+    /*float:left;*/
+    width:40%;
   }
 
 }
