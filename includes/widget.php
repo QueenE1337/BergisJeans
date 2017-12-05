@@ -79,10 +79,42 @@
      'before_title'  => '<h2>',
      'after_title'   => '</h2>',
      /** HTML to wrap each widget  */
-     'before_widget' => '<section class="history-section">',
+     'before_widget' => '<section class="history-section about-section">',
      'after_widget'  => '</section>',
    );
    register_sidebar( $args );
+
+   $args = array(
+      'id'            => 'history-timeline',
+      /** Visible name in the Admin Dashboard Widget page */
+      'name'          => __( 'Company Timeline', 'post_theme' ),
+      /** Visible description in the Admin Dashboard Widget page */
+      'description'   => __( 'Timeline of Bergis Jeans.', 'post_theme' ),
+
+      /** HTML to wrap widget title in  */
+      'before_title'  => '<h2>',
+      'after_title'   => '</h2>',
+      /** HTML to wrap each widget  */
+      'before_widget' => '<section class="timeline about-section">',
+      'after_widget'  => '</section>',
+    );
+    register_sidebar( $args );
+
+    $args = array(
+       'id'            => 'history-images',
+       /** Visible name in the Admin Dashboard Widget page */
+       'name'          => __( 'History images', 'post_theme' ),
+       /** Visible description in the Admin Dashboard Widget page */
+       'description'   => __( 'Images for the timeline of Bergis Jeans.', 'post_theme' ),
+
+       /** HTML to wrap widget title in  */
+       'before_title'  => '<p>',
+       'after_title'   => '</p>',
+       /** HTML to wrap each widget  */
+       'before_widget' => '<section class="timeline-img">',
+       'after_widget'  => '</section>',
+     );
+     register_sidebar( $args );
 
  $args = array(
     'id'            => 'subscribe-form',

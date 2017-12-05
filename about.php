@@ -6,11 +6,8 @@
 get_header(); ?>
 
   <main>
-    <?php dynamic_sidebar('about-info') ?>
-    <?php dynamic_sidebar('vision-info') ?>
-    <?php dynamic_sidebar('mission-info') ?>
-    <?php dynamic_sidebar('history-info') ?>
-
+    <h1><?php the_field( "description_title" ); ?></h1>
+    <p><?php the_field( "description" ); ?></p>
   </main>
 
 <?php get_footer(); ?>

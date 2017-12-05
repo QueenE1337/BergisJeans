@@ -262,11 +262,62 @@ ul.products-container>li:first-child::before{
 /*========================================================
                           About
 =========================================================*/
-.history-section:first-child>div>p::first-letter{
-  font-size: 32px;
+section.values{
+  width: 50%;
+  float:left;
+}
+
+section.values h2, section.values div{
+  width:50%;
+  min-width: 200px;
+  margin:auto;
+  text-align: center;
+}
+
+.history-section>h2{
+  font-size: 42px;
+  font-weight: 500;
+}
+.history-section>div>p::first-letter{
+  font-size: 42px;
+  line-height: 38px;
   font-weight: 500;
   display: block;
   float:left;
+  margin-right: 2px;
+}
+
+.timeline-container{
+  overflow: hidden;
+}
+
+.timeline>h2{
+  display: inline-block;
+  float:left;
+  font-size: 42px;
+  line-height: 38px;
+  font-weight: 500;
+}
+
+.timeline{
+  width: 50%;
+}
+
+section.timeline-img{
+  float:right;
+  width: 50%;
+  height:300px;
+  overflow: hidden;
+  padding-left: 22px;
+}
+
+section.timeline-img>img{
+  width: 100%;
+  display: block;
+  height:auto;
+}
+.about-section{
+  margin-bottom: 44px;
 }
 
 /*========================================================
