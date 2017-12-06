@@ -386,6 +386,12 @@ footer>#copyText {
           background-clip: text;
 }
 
+.news-grid > li {
+  display:block;
+  width: 33%;
+  float: left;
+}
+
 /*========================================================
                       Media queries
 =========================================================*/
