@@ -400,9 +400,13 @@ footer>#copyText {
           background-clip: text;
 }
 
-.news-grid > li {
+/*=======================================================
+                        Post-grid
+=======================================================*/
+
+.post-grid > li {
   display:block;
-  width: 33%;
+  width: 100%;
   float: left;
 }
 
@@ -503,6 +507,16 @@ footer>#copyText {
     ul.values>li h4, ul.values>li p{
       max-width: 300px;
       margin: auto;
+    }
+
+    /*=======================================================
+                            Post-grid
+    =======================================================*/
+
+    .post-grid > li {
+      display:block;
+      width: calc(100%/3);
+      float: left;
     }
 
 }
