@@ -118,4 +118,85 @@ if(function_exists("register_field_group"))
 				'menu_order' => 0,
 			));
 }
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_acf-contact',
+		'title' => 'acf-contact',
+		'fields' => array (
+			array (
+				'key' => 'field_5a26cb3c3b947',
+				'label' => 'Description title',
+				'name' => 'description_title',
+				'type' => 'text',
+				'instructions' => 'Write the title for the description.',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => 'Who is Annelie?',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5a26c1fa2a885',
+				'label' => 'Description',
+				'name' => 'description',
+				'type' => 'textarea',
+				'instructions' => 'Write a short description about Annelie Rådhall.',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => '',
+				'formatting' => 'br',
+			),
+			array (
+				'key' => 'field_5a26c29f2a886',
+				'label' => 'Contact Information',
+				'name' => 'contactinfo',
+				'type' => 'textarea',
+				'instructions' => 'Write the email and phone number where people interested can reach you',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => '',
+				'formatting' => 'br',
+			),
+			array (
+				'key' => 'field_5a26c2ed2a887',
+				'label' => 'Open Hours',
+				'name' => 'openhours',
+				'type' => 'textarea',
+				'instructions' => 'Write when people can reach Bergis through the phone number',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => '',
+				'formatting' => 'br',
+			),
+		),
+		'location' => array (
+					array (
+						array (
+							'param' => 'page_template',
+							'operator' => '==',
+							'value' => 'contact.php',
+							'order_no' => 0,
+							'group_no' => 0,
+						),
+					),
+				),
+				'options' => array (
+					'position' => 'normal',
+					'layout' => 'no_box',
+					'hide_on_screen' => array (
+							0 => 'the_content',
+						),
+				),
+				'menu_order' => 0,
+			));
+}
  ?>
