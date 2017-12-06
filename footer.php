@@ -2,10 +2,7 @@
 
 
 	<div id="infoLeft">
-		<h3>Social Media:</h3> <br>
-		<p>Facebook</p>
-		<p>Instagram</p>
-		<p>YouTube</p>
+		<?php dynamic_sidebar('footer-socialmedia'); ?>
 	</div>
 
 	<div id="infoCenter">
@@ -17,10 +14,7 @@
 	</div>
 
 	<div id="infoRight">
-		<h3>Contact:</h3> <br>
-		<p>info@bergisjeans.se</p>
-		<p>0722528052</p>
-		<p>www.bergisjeans.se</p>
+		<?php dynamic_sidebar('footer-contact'); ?>
 	</div>
 
 

@@ -330,6 +330,10 @@ footer {
   margin-top: 44px;
 }
 
+footer p, h2 {
+  font-size: 10px;
+}
+
 footer>#infoLeft, #infoCenter, #infoRight {
   float: left;
   width: 33%;
@@ -344,21 +348,23 @@ footer>#infoLeft, #infoCenter {
 .subscribeForm {
   background: none;
   border: none;
-  color: white;
+  color: grey;
   padding: 10px;
   border: 1px solid #293342;
+  width: 100%;
+  margin: auto;
   margin-bottom: 7px;
-  width: 150px;
 }
 
 .subscribeForm>input[type=text]:focus {
-  outline: none;
-  border: 2px solid #535b67;
+  //outline: none;
+  //border: 2px solid #535b67;
 }
 
 #signUp {
   background-color: #3c90e0;
-  width: 150px;
+  width: 100px;
+  color: white;
 }
 
 footer>#copyText {

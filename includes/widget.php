@@ -164,6 +164,38 @@
     );
     register_sidebar( $args );
 
+    $args = array(
+      'id'            => 'footer-contact',
+      /** Visible name in the Admin Dashboard Widget page */
+      'name'          => __( 'Contact in footer', 'post_theme' ),
+      /** Visible description in the Admin Dashboard Widget page */
+      'description'   => __( 'The contact information in the footer.', 'post_theme' ),
+
+      /** HTML to wrap widget title in  */
+      'before_title'  => '<h2>',
+      'after_title'   => '</h2>',
+      /** HTML to wrap each widget  */
+      'before_widget' => '<section>',
+      'after_widget'  => '</section>',
+    );
+    register_sidebar( $args );
+
+
+    $args = array(
+      'id'            => 'footer-socialmedia',
+      /** Visible name in the Admin Dashboard Widget page */
+      'name'          => __( 'Social Media in footer', 'post_theme' ),
+      /** Visible description in the Admin Dashboard Widget page */
+      'description'   => __( 'The social media information in the footer.', 'post_theme' ),
+
+      /** HTML to wrap widget title in  */
+      'before_title'  => '<h2>',
+      'after_title'   => '</h2>',
+      /** HTML to wrap each widget  */
+      'before_widget' => '<section>',
+      'after_widget'  => '</section>',
+    );
+    register_sidebar( $args );
 
 
  }
