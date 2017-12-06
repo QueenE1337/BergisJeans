@@ -334,15 +334,15 @@ footer p, h2 {
   font-size: 10px;
 }
 
+#footerIcons {
+  font-size: 30px;
+}
+
 footer>#infoLeft, #infoCenter, #infoRight {
   float: left;
   width: 33%;
   box-sizing: border-bottom;
   font-size: 10px;
-}
-
-footer>#infoLeft, #infoCenter {
-  //border-right: 2px solid rgba(255,255,255, 0.5);
 }
 
 .subscribeForm {
@@ -354,11 +354,6 @@ footer>#infoLeft, #infoCenter {
   width: 100%;
   margin: auto;
   margin-bottom: 7px;
-}
-
-.subscribeForm>input[type=text]:focus {
-  //outline: none;
-  //border: 2px solid #535b67;
 }
 
 #signUp {
