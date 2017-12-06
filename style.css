@@ -17,7 +17,7 @@ Description: A theme to be used at BergisJeans.se
  /*========================================================
                        General presets
  =========================================================*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,500i,700,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,500i,600i,700,700i,800');
 
 *{
   padding:0;
@@ -298,6 +298,20 @@ ul.values{
 ul.values h4{
   font-size: 22px;
   margin-bottom: 11px;
+}
+
+.timeline>p{
+  display: block;
+  overflow: hidden;
+}
+
+.timeline>p>strong{
+  font-size: 42px;
+  line-height: 38px;
+  font-weight: 600;
+  font-style: italic;
+  display: block;
+  float:left;
 }
 
 /*========================================================
