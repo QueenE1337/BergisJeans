@@ -10,7 +10,7 @@ $mq=new WP_Query($args);
 if($mq->have_posts() ):
    echo "<ul class='products-container'>";
    while ( $mq->have_posts() ) : $mq->the_post(); ?>
-    <li class="product-container">
+    <li class="product-container top-border">
       <div>
         <a href="<?php echo esc_url(get_permalink()); ?>">
           <?php the_post_thumbnail('mobile_grid'); ?>

@@ -13,14 +13,14 @@ get_header(); ?>
       </div>
       <figure class="description_image"><?php the_post_thumbnail('mobile_grid'); ?></figure>
     </div>
-    <ul class="contactinformation">
+    <ul class="contactinformation top-border">
       <li>
-        <h4 class="title">Email Us At:</h4>
-        <p><?php the_field( "email" ); ?></p>
+        <h4 class="title">Email Us At</h4>
+        <a href="mailto:<?php the_field( "email" ); ?>" target="_top"><?php the_field( "email" ); ?></a>
       </li>
       <li>
-        <h4 class="title">Or Call Us:</h4>
-        <p><?php the_field( "phone_number" ); ?></p>
+        <h4 class="title">Call Us At</h4>
+        <a href="tel:<?php the_field( "phone_number" ); ?>" target="_top"><?php the_field( "phone_number" ); ?></a>
       </li>
     </ul>
 

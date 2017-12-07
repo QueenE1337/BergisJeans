@@ -31,6 +31,7 @@ a,p,h1,h2,h3,h4,h5{
 p{
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 11px;
 }
 
 a{
@@ -57,7 +58,7 @@ main{
 }
 
 main,footer{
-  padding:5px;
+  padding:11px;
   box-sizing: border-box;
 }
 
@@ -103,6 +104,15 @@ img{
   display: block;
   font-size: 16px;
   opacity:0.8;
+}
+
+.top-border::before{
+  content: '';
+  display: block;
+  width:80%;
+  height:1px;
+  background: rgba(0,0,0,0.1);
+  margin: 0 auto 44px auto;
 }
 
 /*========================================================
@@ -263,15 +273,6 @@ ul.products-container>li{
   position: relative;
 }
 
-ul.products-container>li::before{
-  content: '';
-  display: block;
-  width:80%;
-  height:1px;
-  background: rgba(0,0,0,0.1);
-  margin: 0 auto 44px auto;
-}
-
 ul.products-container>li:first-child::before{
   display: none;/*remove the line for the first list element*/
 }
@@ -319,6 +320,28 @@ ul.values h4{
   display: block;
   float:left;
 }
+
+/*========================================================
+                        Contact
+=========================================================*/
+.contactinformation{
+  list-style: none;
+}
+
+.contactinformation li{
+  margin-bottom: 22px;
+}
+
+.contactinformation .title{
+  font-size: 22px;
+  margin-bottom: 11px;
+  display: block;
+}
+
+.contactinformation li a{
+  font-weight: 400;
+}
+
 
 /*========================================================
                           Footer
@@ -524,6 +547,23 @@ footer>#copyText {
       max-width: 300px;
       margin: auto;
     }
+
+    /*=======================================================
+                          Contact
+    =======================================================*/
+
+    .contactinformation{
+      overflow: hidden;
+    }
+
+    .contactinformation li{
+      float:left;
+      display: block;
+      width: 50%;
+      text-align: center;
+    }
+
+
 
     /*=======================================================
                             Post-grid
