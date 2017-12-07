@@ -1,7 +1,6 @@
 <?php
 
-if(function_exists("register_field_group"))
-{
+if(function_exists("register_field_group")){
 	register_field_group(array (
 		'id' => 'acf_acf-about',
 		'title' => 'acf-about',
@@ -128,34 +127,32 @@ if(function_exists("register_field_group"))
 						),
 				),
 				'menu_order' => 0,
-			));
-}
-if(function_exists("register_field_group"))
-{
-	register_field_group(array (
-		'id' => 'acf_acf-contact',
-		'title' => 'acf-contact',
+		));
+
+		register_field_group(array (
+		'id' => 'acf_contact',
+		'title' => 'Contact',
 		'fields' => array (
 			array (
-				'key' => 'field_5a26cb3c3b947',
-				'label' => 'Description title',
-				'name' => 'description_title',
+				'key' => 'field_5a295cad859f0',
+				'label' => 'Contact title',
+				'name' => 'contact_title',
 				'type' => 'text',
-				'instructions' => 'Write the title for the description.',
+				'instructions' => 'Write the title for the contact',
 				'required' => 1,
 				'default_value' => '',
-				'placeholder' => 'Who is Annelie?',
+				'placeholder' => 'Who is Anneli?',
 				'prepend' => '',
 				'append' => '',
 				'formatting' => 'html',
 				'maxlength' => '',
 			),
 			array (
-				'key' => 'field_5a26c1fa2a885',
-				'label' => 'Description',
-				'name' => 'description',
+				'key' => 'field_5a295cf3859f1',
+				'label' => 'Contact description',
+				'name' => 'contact_description',
 				'type' => 'textarea',
-				'instructions' => 'Write a short description about Annelie Rådhall.',
+				'instructions' => 'Write a short description about yourself.',
 				'required' => 1,
 				'default_value' => '',
 				'placeholder' => '',
@@ -164,51 +161,67 @@ if(function_exists("register_field_group"))
 				'formatting' => 'br',
 			),
 			array (
-				'key' => 'field_5a26c29f2a886',
-				'label' => 'Contact Information',
-				'name' => 'contactinfo',
-				'type' => 'textarea',
-				'instructions' => 'Write the email and phone number where people interested can reach you',
-				'required' => 1,
+				'key' => 'field_5a295d3a859f2',
+				'label' => 'Phone number',
+				'name' => 'phone_number',
+				'type' => 'text',
+				'instructions' => 'Write your phone number where people can contact your company.',
 				'default_value' => '',
 				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
 				'maxlength' => '',
-				'rows' => '',
-				'formatting' => 'br',
 			),
 			array (
-				'key' => 'field_5a26c2ed2a887',
-				'label' => 'Open Hours',
-				'name' => 'openhours',
-				'type' => 'textarea',
-				'instructions' => 'Write when people can reach Bergis through the phone number',
-				'required' => 1,
+				'key' => 'field_5a295daf859f3',
+				'label' => 'Email',
+				'name' => 'email',
+				'type' => 'text',
+				'instructions' => 'Write your company email',
 				'default_value' => '',
 				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
 				'maxlength' => '',
-				'rows' => '',
-				'formatting' => 'br',
+			),
+			array (
+				'key' => 'field_5a295dd6859f4',
+				'label' => 'Opening hours',
+				'name' => 'opening_hours',
+				'type' => 'text',
+				'instructions' => 'Write when people can reach Bergis through the phone number.',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
 			),
 		),
 		'location' => array (
-					array (
-						array (
-							'param' => 'page_template',
-							'operator' => '==',
-							'value' => 'contact.php',
-							'order_no' => 0,
-							'group_no' => 0,
-						),
-					),
+			array (
+				array (
+					'param' => 'page',
+					'operator' => '==',
+					'value' => '10',
+					'order_no' => 0,
+					'group_no' => 0,
 				),
-				'options' => array (
-					'position' => 'normal',
-					'layout' => 'no_box',
-					'hide_on_screen' => array (
-							0 => 'the_content',
-						),
-				),
-				'menu_order' => 0,
-			));
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+				0 => 'the_content',
+				1 => 'featured_image',
+			),
+		),
+		'menu_order' => 0,
+	));
 }
+
+
  ?>
