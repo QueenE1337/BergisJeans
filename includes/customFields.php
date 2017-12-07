@@ -216,7 +216,6 @@ if(function_exists("register_field_group")){
 			'layout' => 'no_box',
 			'hide_on_screen' => array (
 				0 => 'the_content',
-				1 => 'featured_image',
 			),
 		),
 		'menu_order' => 0,
