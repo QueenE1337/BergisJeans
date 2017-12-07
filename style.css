@@ -30,7 +30,7 @@ a,p,h1,h2,h3,h4,h5{
 
 p{
   font-size: 16px;
-  line-height: 20px;
+  line-height: 28px;
   margin-bottom: 11px;
 }
 
@@ -69,9 +69,9 @@ img{
 }
 
 .drop-cap::first-letter{
-  font-size: 42px;
-  line-height: 38px;
-  font-weight: 500;
+  font-size: 52px;
+  line-height: 56px;
+  font-weight: 600;
   display: block;
   float:left;
   margin-right: 8px;
@@ -307,15 +307,32 @@ ul.values h4{
   margin-bottom: 11px;
 }
 
+.timeline{
+  margin-bottom: 66px;
+}
+
 .timeline>p{
-  display: block;
   overflow: hidden;
+  margin:44px 0 44px 22px;
+  padding-left: 22px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.timeline>p::before{
+  content: "";
+  position: absolute;
+  height:100%;
+  width:6px;
+  background: #cd3718;
+  display: block;
+  left:0;
 }
 
 .timeline>p>strong{
-  font-size: 42px;
-  line-height: 38px;
-  font-weight: 600;
+  font-size: 56px;
+  line-height: 52px;
+  font-weight: 500;
   font-style: italic;
   display: block;
   float:left;
