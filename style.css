@@ -99,6 +99,12 @@ img{
   bottom:0;
 }
 
+.date{
+  display: block;
+  font-size: 16px;
+  opacity:0.8;
+}
+
 /*========================================================
                           HEADER
 =========================================================*/
@@ -409,8 +415,17 @@ footer>#copyText {
   display:block;
   width: 100%;
   float: left;
+  overflow:hidden;
+}
+/*
+.post-grid>li>a img{
+    transition:transform 0.2s ease-in-out;
 }
 
+.post-grid>li>a:hover img{
+  transform: scale(1.1,1.1);
+}
+*/
 /*========================================================
                       Media queries
 =========================================================*/
