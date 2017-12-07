@@ -17,7 +17,7 @@ Description: A theme to be used at BergisJeans.se
  /*========================================================
                        General presets
  =========================================================*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,500i,700,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,500i,600i,700,700i,800');
 
 *{
   padding:0;
@@ -300,6 +300,20 @@ ul.values h4{
   margin-bottom: 11px;
 }
 
+.timeline>p{
+  display: block;
+  overflow: hidden;
+}
+
+.timeline>p>strong{
+  font-size: 42px;
+  line-height: 38px;
+  font-weight: 600;
+  font-style: italic;
+  display: block;
+  float:left;
+}
+
 /*========================================================
                           Footer
 =========================================================*/
@@ -316,6 +330,14 @@ footer {
   margin-top: 44px;
 }
 
+footer p, h2 {
+  font-size: 10px;
+}
+
+#footerIcons {
+  font-size: 30px;
+}
+
 footer>#infoLeft, #infoCenter, #infoRight {
   float: left;
   width: 33%;
@@ -323,28 +345,21 @@ footer>#infoLeft, #infoCenter, #infoRight {
   font-size: 10px;
 }
 
-footer>#infoLeft, #infoCenter {
-  //border-right: 2px solid rgba(255,255,255, 0.5);
-}
-
 .subscribeForm {
   background: none;
   border: none;
-  color: white;
+  color: grey;
   padding: 10px;
   border: 1px solid #293342;
+  width: 100%;
+  margin: auto;
   margin-bottom: 7px;
-  width: 150px;
-}
-
-.subscribeForm>input[type=text]:focus {
-  outline: none;
-  border: 2px solid #535b67;
 }
 
 #signUp {
   background-color: #3c90e0;
-  width: 150px;
+  width: 100px;
+  color: white;
 }
 
 footer>#copyText {
@@ -384,6 +399,16 @@ footer>#copyText {
   -webkit-background-clip: text;
      -moz-background-clip: text;
           background-clip: text;
+}
+
+/*=======================================================
+                        Post-grid
+=======================================================*/
+
+.post-grid > li {
+  display:block;
+  width: 100%;
+  float: left;
 }
 
 /*========================================================
@@ -483,6 +508,16 @@ footer>#copyText {
     ul.values>li h4, ul.values>li p{
       max-width: 300px;
       margin: auto;
+    }
+
+    /*=======================================================
+                            Post-grid
+    =======================================================*/
+
+    .post-grid > li {
+      display:block;
+      width: calc(100%/3);
+      float: left;
     }
 
 }

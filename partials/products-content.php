@@ -20,7 +20,12 @@ if($mq->have_posts() ):
         <a href="<?php echo esc_url(get_permalink()); ?>">
           <h4 class="title underline"><?php the_title(); ?></h4>
         </a>
+
         <?php the_content(); ?>
+
+        <?php ?>
+
+
       </div>
     </li>
 <?php endwhile;

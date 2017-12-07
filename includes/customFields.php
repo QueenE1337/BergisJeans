@@ -87,6 +87,18 @@ if(function_exists("register_field_group"))
 				'formatting' => 'br',
 			),
 			array (
+				'key' => 'field_5a27c0e33d085',
+				'label' => 'History year by year',
+				'name' => 'history_year_by_year',
+				'type' => 'wysiwyg',
+				'instructions' => 'Write the year and the text about that specific year. Make sure to make the year bold.',
+				'placeholder' => '',
+				'required' => 1,
+				'default_value' => '',
+				'toolbar' => 'full',
+				'media_upload' => 'yes',
+			),
+			array (
 				'key' => 'field_5a26c3b12a88a',
 				'label' => 'History image',
 				'name' => 'history_image',
