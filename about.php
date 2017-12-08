@@ -13,7 +13,7 @@ get_header(); ?>
       </div>
       <figure class="description_image"><?php the_post_thumbnail('mobile_grid'); ?></figure>
     </div>
-    <ul class="values">
+    <ul class="values top-border">
       <li>
         <h4 class="title">Vision</h4>
         <p><?php the_field( "vision" ); ?></p>
@@ -24,7 +24,7 @@ get_header(); ?>
       </li>
     </ul>
 
-    <div class="history-container">
+    <div class="history-container top-border">
       <h4 class="title underline"><?php the_field( "history_label" ); ?></h4>
       <p class="drop-cap"><?php the_field( "history_description" ); ?></p>
       <div class="timeline">

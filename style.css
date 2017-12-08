@@ -120,7 +120,6 @@ img{
 =========================================================*/
 
 header{
-/*  border-bottom: 1px solid #CCC;*/
   padding:11px 5px;
   box-sizing: border-box;
   text-align: center;
@@ -302,6 +301,10 @@ ul.values{
   margin-bottom: 22px;
 }
 
+ul.values.top-border::before{
+  margin-bottom: 22px;
+}
+
 ul.values h4{
   font-size: 22px;
   margin-bottom: 11px;
@@ -319,6 +322,10 @@ ul.values h4{
   box-sizing: border-box;
 }
 
+.timeline>p:hover::before{
+  width: 10px;
+}
+
 .timeline>p::before{
   content: "";
   position: absolute;
@@ -327,6 +334,7 @@ ul.values h4{
   background: #cd3718;
   display: block;
   left:0;
+  transition: width 0.1s ease-in-out;
 }
 
 .timeline>p>strong{
@@ -563,6 +571,10 @@ footer>#copyText {
     ul.values>li h4, ul.values>li p{
       max-width: 300px;
       margin: auto;
+    }
+
+    ul.values.top-border::before{
+      margin-bottom: 66px;
     }
 
     /*=======================================================
