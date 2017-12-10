@@ -2,7 +2,14 @@
 
 
 	<div id="infoLeft">
-		<?php dynamic_sidebar('footer-socialmedia'); ?>
+
+		<h3>Social Media:</h3> <br>
+		<div id="footerIcons">
+			<i class="fa fa-facebook-official" aria-hidden="true"></i>
+			<i class="fa fa-instagram" aria-hidden="true"></i>
+			<i class="fa fa-youtube-play" aria-hidden="true"></i>
+		</div>
+
 	</div>
 
 	<div id="infoCenter">
