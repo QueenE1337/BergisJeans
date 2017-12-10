@@ -6,11 +6,9 @@
   <script type="text/javascript">
     var launchDate = new Date( "<?php the_field( "launch_date" ); ?>" );
     var today = new Date();
-    var timeDiff = Math.abs(launchDate.getTime() - today.getTime());
+    var timeDiff = launchDate.getTime() - today.getTime();
     var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
-    if(diffDays < 0){
-      diffDays = 0;
-    }
+    diffDays = diffDays < 0 ? 0 : diffDays;//Sets the days until launch to zero if launch date has been reached already.
     document.getElementById("date").innerHTML = diffDays;
 
   </script>
