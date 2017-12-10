@@ -141,7 +141,7 @@ if(function_exists("register_field_group")){
 				'instructions' => 'Write the title for the contact',
 				'required' => 1,
 				'default_value' => '',
-				'placeholder' => 'Who is Anneli?',
+				'placeholder' => 'Who is Annelie?',
 				'prepend' => '',
 				'append' => '',
 				'formatting' => 'html',
