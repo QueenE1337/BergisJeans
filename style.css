@@ -280,6 +280,29 @@ ul.products-container>li:first-child::before{
   margin-top: 11px;
 }
 
+.product-container #materialText {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: -5px;
+  margin-top: 30px;
+}
+
+.product-container .material a {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+  background-color: #121d2d;
+  border-radius: 3px;
+  padding: 5px;
+  display: block;
+  float: left;
+  margin: 5px 5px 0px 0px;
+}
+
+.product-container .material a:hover {
+  opacity: 0.5;
+}
+
 /*========================================================
                           About
 =========================================================*/
