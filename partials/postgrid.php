@@ -1,7 +1,6 @@
 
 
   <?php
-
   if(have_posts() ):
   echo "<ul class='post-grid'>";
      while ( have_posts() ) : the_post(); ?>
