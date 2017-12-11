@@ -436,7 +436,7 @@ footer>#infoContainer {
   max-width: 500px;
   overflow: hidden;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   margin-top: 60px;
 }
 
@@ -462,6 +462,7 @@ footer>#infoContainer>.infoBox>p {
 #footerIcons a {
   font-size: 20px;
   color: white;
+  margin: 5px;
 }
 
 #footerIcons a:hover {
