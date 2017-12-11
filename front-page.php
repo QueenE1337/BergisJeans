@@ -27,31 +27,34 @@
     document.getElementById("date").innerHTML = diffDays;
   </script>
 
-  <!-- This is where we print out our News section -->
-<a href="/news"><h1 class="title underline">News</h1> </a>
-  <?php
-  $args = array(
-    'post_type' => 'news',
-    'posts_per_page' => 2
-  );
-  ?>
-  <?php echo "<ul class='post-grid'>";  ?>
 
-  <?php
-  $mq=new WP_Query($args);
-  if($mq->have_posts() ):
-     while ( $mq->have_posts() ) : $mq->the_post(); ?>
-     <li>
-         <a href="<?php the_permalink();?>"><?php the_post_thumbnail('desktop_grid'); ?> </a>
-         <a href="<?php the_permalink();?>"><?php the_title(); ?> </a>
-     </li>
-  <?php
-  endwhile;
-  endif;
-  ?>
 
-  </ul>
+<div class="news-container">
+    <!-- This is where we print out our News section -->
+  <a href="/news"><h1 class="title underline">News</h1> </a>
+    <?php
+    $args = array(
+      'post_type' => 'news',
+      'posts_per_page' => 2
+    );
+    ?>
+    <?php echo "<ul class='post-grid frontpage-news'>";  ?>
 
+    <?php
+    $mq=new WP_Query($args);
+    if($mq->have_posts() ):
+       while ( $mq->have_posts() ) : $mq->the_post(); ?>
+       <li>
+           <a href="<?php the_permalink();?>"><?php the_post_thumbnail('desktop_grid'); ?> </a>
+           <a href="<?php the_permalink();?>"><?php the_title(); ?> </a>
+       </li>
+    <?php
+    endwhile;
+    endif;
+    ?>
+
+    </ul>
+</div>
 
 </main>
 

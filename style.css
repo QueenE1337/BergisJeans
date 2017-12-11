@@ -48,7 +48,7 @@ body{
   background:#FFF;
   position: relative;
   overflow-x: hidden;
-  margin-top: 22px;
+  margin-top: 55px;
 }
 
 main{
@@ -281,11 +281,10 @@ ul.products-container>li:first-child::before{
   margin-top: 11px;
 }
 
-.product-container #materialText {
-  font-size: 12px;
-  font-weight: bold;
+.product-container .materialText {
+  font-size: 16px;
   margin-bottom: -5px;
-  margin-top: 30px;
+  font-weight: 700;
 }
 
 .product-container .material a {
@@ -316,6 +315,16 @@ ul.products-container>li:first-child::before{
   font-size: 64px;
   font-weight: 700;
   margin-bottom: -22px;
+}
+
+.post-grid{
+  margin:-11px;
+}
+
+.post-grid>li>a{
+  padding:11px;
+  box-sizing: border-box;
+  display: block;
 }
 
 
@@ -497,7 +506,7 @@ footer>#infoContainer>.infoBox>p {
 
 
 /*=======================================================
-                        What is this????? //Emma
+                    Product-icons
 =======================================================*/
 
 #icons{
@@ -542,21 +551,14 @@ footer>#infoContainer>.infoBox>p {
   float: left;
   overflow:hidden;
 }
-/*
-.post-grid>li>a img{
-    transition:transform 0.2s ease-in-out;
-}
 
-.post-grid>li>a:hover img{
-  transform: scale(1.1,1.1);
-}
-*/
+
 /*========================================================
                       Media queries
 =========================================================*/
 @media(min-width:540px){
 
-    body{margin-top: 77px;}
+    body{margin-top: 88px;}
     /*=======================================================
                                 Header
     =======================================================*/
@@ -681,6 +683,11 @@ footer>#infoContainer>.infoBox>p {
       float: left;
     }
 
+    /*=======================================================
+                            Frontpage
+    =======================================================*/
+
+
 }
 
 @media(min-width:720px){
@@ -689,7 +696,12 @@ footer>#infoContainer>.infoBox>p {
       width: calc(100%/3);
       float: left;
     }
+
+    .frontpage-news>li{
+      width:calc(100%/2);
+    }
 }
+
 @media(min-width:960px){
   header,main,footer{
     width:100%;
@@ -702,7 +714,6 @@ footer>#infoContainer>.infoBox>p {
     width:60%;
   }
   .about-description-container>figure{
-    /*float:left;*/
     width:40%;
   }
 

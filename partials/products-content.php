@@ -23,8 +23,8 @@ if($mq->have_posts() ):
 
         <?php the_content(); ?>
 
-        
-        <p id="materialText">Colour</p>
+
+        <p class="materialText title">Colour</p>
         <?php the_terms(get_the_ID(), 'product_material', '<div class="material">', ' ', '</div>'); ?>
 
 
