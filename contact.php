@@ -23,6 +23,7 @@ get_header(); ?>
         <i class="fa fa-mobile" aria-hidden="true"></i>
         <h4 class="title">Call Us At</h4>
         <a href="tel:<?php the_field( "phone_number" ); ?>" target="_top"><?php the_field( "phone_number" ); ?></a>
+        <p>Weekdays <?php the_field( "opening_hours" ); ?>.</p>
       </li>
     </ul>
 
