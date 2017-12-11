@@ -13,9 +13,9 @@
 
 			<h3>Social Media</h3>
 			<div id="footerIcons">
-				<i class="fa fa-facebook-official" aria-hidden="true"></i>
-				<i class="fa fa-instagram" aria-hidden="true"></i>
-				<i class="fa fa-youtube-play" aria-hidden="true"></i>
+				<a href="https://www.facebook.com/bergisjeans"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/bergisjeans"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="https://www.youtube.com/www.youtube.com/bergisjeans"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
 			</div>
 
 		</div>

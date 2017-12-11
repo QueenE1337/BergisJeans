@@ -459,8 +459,13 @@ footer>#infoContainer>.infoBox>p {
   line-height: 5px;
 }
 
-#footerIcons {
+#footerIcons a {
   font-size: 20px;
+  color: white;
+}
+
+#footerIcons a:hover {
+  opacity: 0.5;
 }
 
 #copyText {
