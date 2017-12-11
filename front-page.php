@@ -15,7 +15,9 @@
 
 
   <!-- This is where we print out our News section -->
-  <h1>News</h1>
+   
+     <a href="/news"><h1>News</h1> </a>
+
   <?php
   $args = array(
     'post_type' => 'news',
