@@ -48,7 +48,7 @@ body{
   background:#FFF;
   position: relative;
   overflow-x: hidden;
-  margin-top: 88px;
+  margin-top: 22px;
 }
 
 main{
@@ -556,7 +556,7 @@ footer>#infoContainer>.infoBox>p {
 =========================================================*/
 @media(min-width:540px){
 
-    body{margin-top: 110px;}
+    body{margin-top: 77px;}
     /*=======================================================
                                 Header
     =======================================================*/
