@@ -1,8 +1,18 @@
 <?php get_header(); ?>
 <main>
-  <h1>Frontpage</h1>
 
-  <div class="date-container  top-border">
+  <?php
+    //This is the frontpage slider, created with the plugin MetaSlider.
+
+    if(have_posts()){
+      while(have_posts()){
+        the_post();
+        the_content();
+      }
+    }
+    ?>
+
+  <div class="date-container">
     <span class="title" id="date"></span>
     <p>days</p>
     <p class="title">until launch of...</p>
