@@ -1,7 +1,17 @@
 <?php get_header(); ?>
 
 <main>
-  <h1>Frontpage</h1>
+  <?php
+    if( have_posts() ) {
+      while ( have_posts() ){
+        the_post();
+        the_content();
+      }
+    }
+  ?>
+  <?php
+    echo do_shortcode('[smartslider3 slider=1]');
+  ?>
 </main>
 
 
