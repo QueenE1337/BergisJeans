@@ -28,11 +28,9 @@
 		</div>
 	</div>
 
-
-
-	<p id="copyText"><i>© Copyright Bergis Jeans 2017</i></p>
-
 </footer>
+
+<p id="copyText"><i>© Copyright Bergis Jeans 2017</i></p>
 
 <?php wp_footer(); ?>
 

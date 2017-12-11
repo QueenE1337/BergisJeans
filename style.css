@@ -401,7 +401,7 @@ footer {
   color: #fff;
   text-align: center;
   overflow: hidden;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 10px 20px 10px;
   margin: 0;
 }
 
@@ -463,12 +463,14 @@ footer>#infoContainer>.infoBox>p {
   font-size: 20px;
 }
 
-footer>#copyText {
+#copyText {
   float: left;
   width: 100%;
   font-size: 10px;
+  text-align: center;
   background-color: #cd3718;
   margin-bottom: 0px;
+  color: white;
 }
 
 
