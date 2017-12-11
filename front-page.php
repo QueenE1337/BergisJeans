@@ -1,6 +1,17 @@
 <?php get_header(); ?>
 <main>
-  <h1>Frontpage</h1>
+
+  <?php
+    //This is the frontpage slider, created with the plugin MetaSlider.
+
+    if(have_posts()){
+      while(have_posts()){
+        the_post();
+        the_content();
+      }
+    }
+    ?>
+
   <div class="date-container">
     <span class="title" id="date"></span>
     <p>days</p>
@@ -15,7 +26,6 @@
     diffDays = diffDays < 0 ? 0 : diffDays;//Sets the days until launch to zero if launch date has been reached already.
     document.getElementById("date").innerHTML = diffDays;
   </script>
-
 
   <!-- This is where we print out our News section -->
 <a href="/news"><h1 class="title underline">News</h1> </a>
