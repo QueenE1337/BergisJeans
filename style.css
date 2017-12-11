@@ -304,6 +304,11 @@ ul.products-container>li:first-child::before{
   opacity: 0.5;
 }
 
+.readmore {
+  margin-top: 10px;
+  color: rgba(96, 94, 102, 0.81);
+}
+
 /*========================================================
                         Frontpage
 =========================================================*/

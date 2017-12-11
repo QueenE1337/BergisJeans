@@ -42,6 +42,7 @@
 
   </ul>
 
+<a href="/news"><p class="readmore"> More News</p> </a>
 
 </main>
 
