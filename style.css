@@ -78,6 +78,7 @@ img{
 }
 
 .title{
+  font-family: 'Montserrat', sans-serif;
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 500;
@@ -304,6 +305,21 @@ ul.products-container>li:first-child::before{
 }
 
 /*========================================================
+                        Frontpage
+=========================================================*/
+.date-container{
+  text-align: center;
+  padding:44px 0;
+}
+
+.date-container>span{
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: -22px;
+}
+
+
+/*========================================================
                           About
 =========================================================*/
 
@@ -516,6 +532,10 @@ footer>#infoContainer>.infoBox>p {
                         Post-grid
 =======================================================*/
 
+.post-grid {
+  overflow: hidden;
+}
+
 .post-grid > li {
   display:block;
   width: 100%;
@@ -657,12 +677,19 @@ footer>#infoContainer>.infoBox>p {
 
     .post-grid > li {
       display:block;
-      width: calc(100%/3);
+      width: calc(100%/2);
       float: left;
     }
 
 }
 
+@media(min-width:720px){
+    .post-grid > li {
+      display:block;
+      width: calc(100%/3);
+      float: left;
+    }
+}
 @media(min-width:960px){
   header,main,footer{
     width:100%;
