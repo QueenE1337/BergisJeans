@@ -614,8 +614,11 @@ footer #infoContainer>.infoBox>p {
   width: 100%;
 }
 
-.icons {
+.product-qualities>i {
   font-size: 90px;
+}
+
+.icons {
   margin-bottom: 22px;
   color: transparent;
     background-color: #000;
