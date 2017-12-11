@@ -1,7 +1,7 @@
 <footer>
 
 	<div id="subFormContainer">
-		<h3>Be first - subscribe to our newsletter!</h3>
+		<h3 class="title">Be first!<br><span>subscribe to our newsletter!</span></h3>
 		<?php
 			//Including a widget. In the widget, we include the plugin MailChimp (subscription form). When the user sign up their information, they will be placed in a subscrition list in MailChimp. From there, we can send out mass mails to the subscribed users.
 			dynamic_sidebar('subscribe-form'); ?>
@@ -28,9 +28,10 @@
 		</div>
 	</div>
 
+	<p id="copyText"><i>© Copyright Bergis Jeans 2017</i></p>
 </footer>
 
-<p id="copyText"><i>© Copyright Bergis Jeans 2017</i></p>
+
 
 <?php wp_footer(); ?>
 

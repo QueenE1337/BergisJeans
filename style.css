@@ -12,7 +12,21 @@ Description: A theme to be used at BergisJeans.se
 
  /* Login to MailChimp:
  Username: BergisJeans17
- Password: Bergis-17 */
+ Password: Bergis-17
+ API key: 07c5c5520281bd45517666e8fcec9ba2-us17
+ FORM:
+ <p>
+    <input class="subscribeForm" type="text" name="FNAME" placeholder="Name"
+    required="">
+</p>
+<p>
+  <input class="subscribeForm" type="email" name="EMAIL" placeholder="Email" required />
+</p>
+
+<p>
+  <input class="subscribeForm" id="signUp" type="submit" value="Submit" />
+</p>
+*/
 
  /*========================================================
                        General presets
@@ -32,6 +46,7 @@ p{
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 11px;
+  font-weight: 300;
 }
 
 a{
@@ -48,7 +63,7 @@ body{
   background:#FFF;
   position: relative;
   overflow-x: hidden;
-  margin-top: 55px;
+  margin:55px 0 0 0;
 }
 
 main{
@@ -84,6 +99,7 @@ img{
   font-weight: 500;
   display: inline-block;
   margin-bottom: 22px;
+  margin-top:0;
   position: relative;
 }
 
@@ -105,6 +121,7 @@ img{
   display: block;
   font-size: 16px;
   opacity:0.8;
+  margin-bottom: 11px;
 }
 
 .top-border::before{
@@ -114,6 +131,10 @@ img{
   height:1px;
   background: rgba(0,0,0,0.1);
   margin: 0 auto 44px auto;
+}
+
+nav>div>ul{
+  padding:0;
 }
 
 /*========================================================
@@ -204,8 +225,6 @@ nav>div>ul>li.current-menu-item>a{
   	right:100%;
   }
 
-
-
 }
 
 /*========================================================
@@ -265,6 +284,10 @@ nav>div>ul>li.current-menu-item>a{
   background: rgba(0,0,0,0.6);
 }
 
+ul.products-container{
+  padding:0;
+}
+
 ul.products-container>li{
   overflow: hidden;
   list-style: none;
@@ -317,8 +340,21 @@ ul.products-container>li:first-child::before{
   margin-bottom: -22px;
 }
 
+.this-is-bergis{
+  max-width: 720px;
+  margin:11px auto 88px auto;
+  text-align: center;
+}
+
+.this-is-bergis>.title{
+  display: block;
+  font-weight: 700;
+  font-size: 42px;
+}
+
 .post-grid{
   margin:-11px;
+  padding:0;
 }
 
 .post-grid>li>a{
@@ -327,6 +363,28 @@ ul.products-container>li:first-child::before{
   display: block;
 }
 
+.news-container{
+  overflow: hidden;
+  margin-bottom: 88px;
+}
+
+.readmore {
+  margin-top: 10px;
+  border: 2px solid #000;
+  padding: 11px 22px;
+  font-size: 16px;
+  overflow: hidden;
+  position: relative;
+  font-weight: 300;
+  float:right;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.readmore:hover{
+  color:#FFF;
+  opacity: 1;
+  background: #000;
+}
 
 /*========================================================
                           About
@@ -347,6 +405,7 @@ main.about p{
 ul.values{
   list-style: none;
   margin-bottom: 22px;
+  padding:0;
 }
 
 ul.values.top-border::before{
@@ -399,15 +458,21 @@ ul.values h4{
 =========================================================*/
 .contactinformation{
   list-style: none;
+  text-align: center;
 }
 
 .contactinformation li{
   margin-bottom: 22px;
 }
 
+.contactinformation li i{
+  font-size: 64px;
+  margin-bottom: 11px;
+}
 .contactinformation .title{
   font-size: 22px;
   margin-bottom: 11px;
+  margin-top:0;
   display: block;
 }
 
@@ -426,7 +491,7 @@ footer {
   color: #fff;
   text-align: center;
   overflow: hidden;
-  padding: 44px 11px 22px 11px;
+  padding: 44px 11px 0px 11px;
   margin: 0;
 }
 
@@ -436,6 +501,17 @@ footer {
   padding: 20px 10px 0px 10px;
   background-color: #242d3b;
   border-radius: 10px;
+}
+
+#subFormContainer h3 {
+  font-size: 32px;
+}
+
+
+#subFormContainer h3>span {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 300;
 }
 
 .subscribeForm {
@@ -455,9 +531,15 @@ footer {
   width: 100px;
   color: white;
   margin-bottom: 22px;
+  cursor: pointer;
+  outline:none;
 }
 
-footer>#infoContainer {
+#signUp:hover {
+    background-color: #2c80d0;
+}
+
+footer #infoContainer {
   max-width: 500px;
   overflow: hidden;
   margin: auto;
@@ -465,21 +547,21 @@ footer>#infoContainer {
   margin-top: 66px;
 }
 
-footer>#infoContainer>.infoBox {
+footer #infoContainer>.infoBox {
   float: left;
   width: 49%;
   font-size: 12px;
 }
 
-footer>#infoContainer>.infoBox:first-child {
+footer #infoContainer>.infoBox:first-child {
   border-right: 2px solid #535b67;
 }
 
-footer>#infoContainer>.infoBox>h3 {
+footer #infoContainer>.infoBox>h3 {
   margin-bottom: 11px;
 }
 
-footer>#infoContainer>.infoBox>p {
+footer #infoContainer>.infoBox>p {
   font-size: 10px;
   line-height: 5px;
 }
@@ -495,13 +577,14 @@ footer>#infoContainer>.infoBox>p {
 }
 
 #copyText {
-  float: left;
   width: 100%;
   font-size: 10px;
   text-align: center;
   background-color: #cd3718;
   margin-bottom: 0px;
   color: white;
+  margin:0 -11px;
+  padding:11px;
 }
 
 
@@ -526,7 +609,7 @@ footer>#infoContainer>.infoBox>p {
   width: 100%;
 }
 
-.product-qualities>i {
+.icons {
   font-size: 90px;
   margin-bottom: 22px;
   color: transparent;
@@ -558,7 +641,7 @@ footer>#infoContainer>.infoBox>p {
 =========================================================*/
 @media(min-width:540px){
 
-    body{margin-top: 88px;}
+    body{margin-top: 99px;}
     /*=======================================================
                                 Header
     =======================================================*/
@@ -662,6 +745,7 @@ footer>#infoContainer>.infoBox>p {
 
     .contactinformation{
       overflow: hidden;
+      margin-bottom: 66px;
     }
 
     .contactinformation li{

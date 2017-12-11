@@ -15,10 +15,12 @@ get_header(); ?>
     </div>
     <ul class="contactinformation top-border">
       <li>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
         <h4 class="title">Email Us At</h4>
         <a href="mailto:<?php the_field( "email" ); ?>" target="_top"><?php the_field( "email" ); ?></a>
       </li>
       <li>
+        <i class="fa fa-mobile" aria-hidden="true"></i>
         <h4 class="title">Call Us At</h4>
         <a href="tel:<?php the_field( "phone_number" ); ?>" target="_top"><?php the_field( "phone_number" ); ?></a>
       </li>

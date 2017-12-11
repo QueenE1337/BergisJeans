@@ -237,6 +237,20 @@ if(function_exists("register_field_group")){
 					'display_format' => 'dd/mm/yy',
 					'first_day' => 1,
 				),
+				array (
+					'key' => 'field_5a2e9ddd52dc3',
+					'label' => 'This is Bergis',
+					'name' => 'this_is_bergis',
+					'type' => 'textarea',
+					'instructions' => 'Write a short and sweet text about Bergis',
+					'required' => 1,
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'formatting' => 'html',
+					'maxlength' => '',
+				),
 			),
 			'location' => array (
 				array (

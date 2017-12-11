@@ -27,8 +27,10 @@
     document.getElementById("date").innerHTML = diffDays;
   </script>
 
-
-
+<div class="this-is-bergis">
+  <h1 class="title">BERGIS jeans</h1>
+  <p><?php the_field( "this_is_bergis" ); ?></p>
+</div>
 <div class="news-container">
     <!-- This is where we print out our News section -->
   <a href="/news"><h1 class="title underline">News</h1> </a>
@@ -54,6 +56,7 @@
     ?>
 
     </ul>
+    <a href="/news" class="readmore">More News</a>
 </div>
 
 </main>
