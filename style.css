@@ -12,7 +12,21 @@ Description: A theme to be used at BergisJeans.se
 
  /* Login to MailChimp:
  Username: BergisJeans17
- Password: Bergis-17 */
+ Password: Bergis-17
+ API key: 07c5c5520281bd45517666e8fcec9ba2-us17
+ FORM:
+ <p>
+    <input class="subscribeForm" type="text" name="FNAME" placeholder="Name"
+    required="">
+</p>
+<p>
+  <input class="subscribeForm" type="email" name="EMAIL" placeholder="Email" required />
+</p>
+
+<p>
+  <input class="subscribeForm" id="signUp" type="submit" value="Submit" />
+</p>
+*/
 
  /*========================================================
                        General presets
