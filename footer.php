@@ -1,33 +1,36 @@
 <footer>
 
-
-	<div id="infoLeft">
-
-		<h3>Social Media:</h3> <br>
-		<div id="footerIcons">
-			<i class="fa fa-facebook-official" aria-hidden="true"></i>
-			<i class="fa fa-instagram" aria-hidden="true"></i>
-			<i class="fa fa-youtube-play" aria-hidden="true"></i>
-		</div>
-
-	</div>
-
-	<div id="infoCenter">
-		<h3>Subscribe to our newsletter:</h3> <br>
+	<div id="subFormContainer">
+		<h3>Be first - subscribe to our newsletter!</h3>
 		<?php
 			//Including a widget. In the widget, we include the plugin MailChimp (subscription form). When the user sign up their information, they will be placed in a subscrition list in MailChimp. From there, we can send out mass mails to the subscribed users.
-			dynamic_sidebar('subscribe-form');
-		?>
-	</div>
-
-	<div id="infoRight">
-		<?php dynamic_sidebar('footer-contact'); ?>
+			dynamic_sidebar('subscribe-form'); ?>
 	</div>
 
 
-	<p id="copyText"><i>© Copyright Bergis Jeans 2017</i></p>
+	<div id="infoContainer">
+		<div class="infoBox">
+
+			<h3>Social Media</h3>
+			<div id="footerIcons">
+				<a href="https://www.facebook.com/bergisjeans"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/bergisjeans"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="https://www.youtube.com/bergisjeans"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+			</div>
+
+		</div>
+
+		<div class="infoBox">
+			<h3>Contact</h3>
+			<p>info@bergisjeans.se</p>
+			<p>0722528052</p>
+			<p>www.bergisjeans.se</p>
+		</div>
+	</div>
 
 </footer>
+
+<p id="copyText"><i>© Copyright Bergis Jeans 2017</i></p>
 
 <?php wp_footer(); ?>
 
