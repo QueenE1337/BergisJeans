@@ -1,6 +1,11 @@
 <?php get_header(); ?>
 <main>
-  <h1>Frontpage</h1>
+
+  <?php 
+    //This is the frontpage slider, created with the plugin MetaSlider.
+    echo do_shortcode('[metaslider id=61]'); ?>
+
+
   <div class="date-container">
     <span class="title" id="date"></span>
     <p>days</p>
