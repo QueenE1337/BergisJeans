@@ -7,7 +7,7 @@ get_header(); ?>
 
   <main>
     <div id="icons">
-      <div class="product-qualities"><i class="icons fa fa-globe" aria-hidden="true"></i><p><strong>Environmentally Friendly</strong></p></div>
+      <div class="product-qualities"><i class="icons fa fa-globe" aria-hidden="true"></i><p><strong>Sustainable</strong></p></div>
       <div class="product-qualities"><i class="icons fa fa-star" aria-hidden="true"></i><p><strong>Top Quality</strong></p></div>
       <div class="product-qualities"><i class="icons fa fa-arrows-h" aria-hidden="true"></i><p><strong>Well-Fitted</strong></p></div>
     </div>

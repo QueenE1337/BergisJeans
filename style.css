@@ -441,13 +441,17 @@ ul.values h4{
   transition: width 0.1s ease-in-out;
 }
 
-.timeline>p>strong{
+.timeline>p>strong, .timeline>p>b{
   font-size: 56px;
   line-height: 52px;
   font-weight: 500;
   font-style: italic;
   display: block;
   float:left;
+}
+
+.timeline>p>b{
+  margin-right: 11px;
 }
 
 /*========================================================

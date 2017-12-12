@@ -28,7 +28,12 @@ get_header(); ?>
       <h4 class="title underline"><?php the_field( "history_label" ); ?></h4>
       <p class="drop-cap"><?php the_field( "history_description" ); ?></p>
       <div class="timeline">
-        <?php the_field("history_year_by_year") ?>
+        <?php the_field("jeans_revolution_timeline") ?>
+      </div>
+      <h4 class="title underline"><?php the_field( "bergis_timeline_title" ); ?></h4>
+      <p class="drop-cap"><?php the_field( "bergis_description_year_by_year" ); ?></p>
+      <div class="timeline">
+        <?php the_field("bergis_year_by_year") ?>
       </div>
     </div>
   </main>
