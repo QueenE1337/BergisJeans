@@ -353,13 +353,10 @@ ul.products-container>li:first-child::before{
 }
 
 .post-grid{
-  margin:-11px;
   padding:0;
 }
 
 .post-grid>li>a{
-  padding:11px;
-  box-sizing: border-box;
   display: block;
 }
 
@@ -369,7 +366,7 @@ ul.products-container>li:first-child::before{
 }
 
 .readmore {
-  margin-top: 10px;
+  margin-top: 22px;
   border: 2px solid #000;
   padding: 11px 22px;
   font-size: 16px;
@@ -641,8 +638,38 @@ footer #infoContainer>.infoBox>p {
   width: 100%;
   float: left;
   overflow:hidden;
+  position: relative;
 }
 
+.post-grid img{
+  filter:contrast(80%) brightness(90%);
+  transition: filter 0.2s ease-in-out;
+}
+
+.post-grid > li > a > p{
+  position: absolute;
+  top:50%;
+  margin-top: -14px;
+  left:0;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding:0 11px;
+  box-sizing: border-box;
+  font-size: 26px;
+  font-weight: 700;
+  color:#FFF;
+  line-height: 28px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.post-grid > li > a:hover > p{
+  transform: scale(1.05,1.05);
+}
+
+.post-grid > li > a:hover > img{
+  filter:contrast(90%) brightness(95%);
+}
 
 /*========================================================
                       Media queries
@@ -778,7 +805,11 @@ footer #infoContainer>.infoBox>p {
     /*=======================================================
                             Frontpage
     =======================================================*/
-
+    .frontpage-news > li > a > p{
+      font-size: 42px;
+      line-height: 52px;
+      margin-top: -22px;
+    }
 
 }
 

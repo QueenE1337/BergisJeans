@@ -47,8 +47,10 @@
     if($mq->have_posts() ):
        while ( $mq->have_posts() ) : $mq->the_post(); ?>
        <li>
-           <a href="<?php the_permalink();?>"><?php the_post_thumbnail('desktop_grid'); ?> </a>
-           <a href="<?php the_permalink();?>"><?php the_title(); ?> </a>
+           <a href="<?php the_permalink();?>">
+             <?php the_post_thumbnail('desktop_grid'); ?>
+             <p><?php the_title(); ?></p>
+           </a>
        </li>
     <?php
     endwhile;
