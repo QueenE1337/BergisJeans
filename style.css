@@ -801,16 +801,6 @@ footer #infoContainer>.infoBox>p {
       width: calc(100%/2);
       float: left;
     }
-
-    /*=======================================================
-                            Frontpage
-    =======================================================*/
-    .frontpage-news > li > a > p{
-      font-size: 42px;
-      line-height: 52px;
-      margin-top: -22px;
-    }
-
 }
 
 @media(min-width:720px){
@@ -838,6 +828,16 @@ footer #infoContainer>.infoBox>p {
   }
   .about-description-container>figure{
     width:40%;
+  }
+
+
+  /*=======================================================
+                              Frontpage
+  =======================================================*/
+  .frontpage-news > li > a > p{
+    font-size: 42px;
+    line-height: 52px;
+    margin-top: -22px;
   }
 
 }
