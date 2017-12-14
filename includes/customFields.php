@@ -132,16 +132,6 @@ if(function_exists("register_field_group")){
 					'toolbar' => 'full',
 					'media_upload' => 'yes',
 				),
-			array (
-				'key' => 'field_5a26c3b12a88a',
-				'label' => 'History image',
-				'name' => 'history_image',
-				'type' => 'image',
-				'required' => 1,
-				'save_format' => 'object',
-				'preview_size' => 'desktop_grid',
-				'library' => 'all',
-			),
 		),
 		'location' => array (
 					array (
@@ -302,7 +292,8 @@ if(function_exists("register_field_group")){
 				'position' => 'normal',
 				'layout' => 'no_box',
 				'hide_on_screen' => array (
-				),
+						0 => 'featured_image',
+					),
 			),
 			'menu_order' => 0,
 		));
